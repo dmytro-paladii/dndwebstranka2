@@ -1,0 +1,80 @@
+/* základ */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+/* nadpisy */
+h1, h2, h3 {
+    font-family: "Times New Roman", serif;
+}
+
+/* layout */
+header {
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background: #555;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* pseudo triedy */
+nav a:hover {
+    color: yellow;
+}
+
+nav a:active {
+    color: red;
+}
+
+/* obsah */
+main {
+    padding: 20px;
+    background: white;
+}
+
+/* odseky */
+p {
+    text-indent: 20px;
+    margin-bottom: 15px;
+}
+
+/* footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* tlač */
+@media print {
+    body {
+        background: white;
+        color: black;
+    }
+
+    h1, h2, h3 {
+        font-family: Arial, sans-serif;
+    }
+
+    p {
+        font-family: "Times New Roman", serif;
+    }
+}
