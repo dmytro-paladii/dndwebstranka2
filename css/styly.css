@@ -1,16 +1,13 @@
-/* základ */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
 }
 
-/* nadpisy */
 h1, h2, h3 {
     font-family: "Times New Roman", serif;
 }
 
-/* layout */
 header {
     background: #806009;
     color: white;
@@ -27,6 +24,7 @@ nav ul {
     list-style: none;
     display: flex;
     gap: 15px;
+    justify-content: center;
 }
 
 nav a {
@@ -34,28 +32,17 @@ nav a {
     text-decoration: none;
 }
 
-/* pseudo triedy */
 nav a:hover {
     color: yellow;
 }
 
-nav a:active {
-    color: red;
-}
-
-/* obsah */
 main {
     padding: 20px;
     background: white;
+    margin: 20px auto;
+    max-width: 1000px;
 }
 
-/* odseky */
-p {
-    text-indent: 20px;
-    margin-bottom: 15px;
-}
-
-/* footer */
 footer {
     background: #333;
     color: white;
@@ -63,18 +50,16 @@ footer {
     padding: 10px;
 }
 
-/* tlač */
-@media print {
-    body {
-        background: white;
-        color: black;
+/* responsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
     }
+}
 
-    h1, h2, h3 {
-        font-family: Arial, sans-serif;
-    }
-
-    p {
-        font-family: "Times New Roman", serif;
+@media (max-width: 480px) {
+    header {
+        font-size: 18px;
     }
 }
